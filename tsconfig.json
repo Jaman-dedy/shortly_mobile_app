@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@app/*": [
-        "/src/*"
+        "src/*"
       ],
     }
   },

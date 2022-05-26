@@ -1,27 +1,55 @@
-import {moderateScale} from 'react-native-size-matters';
+import {s} from 'react-native-size-matters';
 
-const fontSize = 17;
 const textFamily = {
-  fontFamily: 'Poppins-Regular',
+  fontFamily: 'Poppins-Medium',
+};
+
+export const buttonVariant = {
+  paddingVertical: s(8),
+  paddingHorizontal: s(16),
+  borderRadius: s(4),
+  width: s(280),
+};
+
+export const inputVariant = {
+  paddingVertical: s(8),
+  paddingHorizontal: s(16),
+  borderRadius: s(4),
+  width: s(280),
+  borderWidth: 1,
+  height: s(45),
+  fontSize: 18,
 };
 
 export const textVariants = {
+  defaults: {
+    color: 'text',
+  },
   header: {
     ...textFamily,
-    fontSize: moderateScale(fontSize),
-    lineHeight: 24,
-    color: 'mainForeground',
+    fontSize: 34,
+    color: 'text',
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   subHeader: {
     ...textFamily,
-    fontSize: moderateScale(fontSize),
-    lineHeight: 24,
-    color: 'mainForeground',
+    fontSize: 22,
+    color: 'text',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
   paragraph: {
     ...textFamily,
-    fontSize: moderateScale(fontSize),
-    lineHeight: 24,
-    color: 'mainForeground',
+    fontSize: 18,
+    color: 'text',
+    textAlign: 'center',
+  },
+  buttonText: {
+    ...textFamily,
+    fontSize: 22,
+    color: 'mainBackground',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
 };
