@@ -9,7 +9,7 @@ type inputProps = {
   placeholder?: string;
   formData: Record<string, string>;
   errors: Record<string, string>;
-  onChangeText: (text: string) => void;
+  onChangeText: (args: {name: string; value: string}) => void;
 };
 
 const Input = ({placeholder, formData, onChangeText, errors}: inputProps) => {
@@ -18,7 +18,7 @@ const Input = ({placeholder, formData, onChangeText, errors}: inputProps) => {
     input: {
       ...theme.inputVariant,
       borderColor: errors?.message ? 'red' : 'white',
-      color: errors?.message ? 'red' : 'white',
+      color: errors?.message ? 'red' : 'black',
       backgroundColor: 'white',
       textAlign: 'center',
     },
@@ -26,7 +26,9 @@ const Input = ({placeholder, formData, onChangeText, errors}: inputProps) => {
   return (
     <TextInput
       value={errors?.message ? errors.message : formData?.link}
-      onChangeText={onChangeText}
+      onChangeText={(linkValue: string): void =>
+        onChangeText({name: 'link', value: linkValue})
+      }
       style={styles.input}
       placeholder={placeholder}
     />
