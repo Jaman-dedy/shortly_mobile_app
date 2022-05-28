@@ -21,7 +21,8 @@ const theme = createTheme({
   spacing: {
     sm: s(8),
     md: s(16),
-    lg: s(28),
+    lg: s(22),
+    xlg: s(28),
   },
   colors: {
     offBackground: palette.backgroundColorOff,
@@ -30,6 +31,7 @@ const theme = createTheme({
     sideBarBackground: palette.primaryDark,
     text: palette.text,
     primary: palette.primary,
+    gray: palette.Gray,
   },
   breakpoints: {},
   textVariants,

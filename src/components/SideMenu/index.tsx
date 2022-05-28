@@ -25,7 +25,6 @@ const SideMenu = ({
   onChangeText,
   handleShortenLink,
 }: Props) => {
-  console.log('errors :>> ', errors);
   return (
     <Box flex={1} backgroundColor="sideBarBackground">
       <ShapeImg style={styles.shape} />
