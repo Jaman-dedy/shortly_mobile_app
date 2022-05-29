@@ -1,11 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Clipboard from '@react-native-community/clipboard';
 
 import {Box, Text} from '@app/assets/style/theme';
 import Button from '@app/components/common/Button';
 import DeleteImg from '@app/assets/images/del.svg';
 import IconButton from '@app/components/common/IconButton';
+import {truncate} from '@app/helpers/truncateString';
 
-const BoxComponent = () => {
+type Props = {
+  link: Record<string, string>;
+  handleDeleteLink: (code: string) => void;
+};
+
+const BoxComponent = ({link, handleDeleteLink}: Props) => {
+  const [buttonText, setButtonText] = useState('COPY');
+  const [switchColor, setSwitchColor] = useState(false);
+  const copyToClipboard = (url: string) => {
+    Clipboard.setString(url);
+    setButtonText('COPIED');
+    setSwitchColor(true);
+  };
   return (
     <Box
       backgroundColor="mainBackground"
@@ -19,17 +33,21 @@ const BoxComponent = () => {
         flexDirection="row"
         justifyContent="space-between"
         alignSelf="stretch">
-        <Text variant="paragraph">https://www.spiegel.del/sie...</Text>
-        <IconButton>
+        <Text variant="paragraph">{truncate(link?.original_link, 27)}</Text>
+        <IconButton onPress={() => handleDeleteLink(link?.code)}>
           <DeleteImg />
         </IconButton>
       </Box>
       <Box borderBottomWidth={1} borderBottomColor="gray" alignSelf="stretch" />
       <Box padding="md">
         <Text color="primary" variant="paragraph">
-          https://rel.ink/k4lkyk
+          {link?.full_short_link}
         </Text>
-        <Button text="COPY" color="primary" />
+        <Button
+          onPress={() => copyToClipboard(link?.full_short_link)}
+          text={buttonText}
+          color={switchColor ? 'primaryDark' : 'primary'}
+        />
       </Box>
     </Box>
   );

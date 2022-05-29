@@ -29,6 +29,7 @@ const theme = createTheme({
     mainBackground: palette.backgroundColor,
     mainForeground: palette.veryDarkViolet,
     sideBarBackground: palette.primaryDark,
+    primaryDark: palette.primaryDark,
     text: palette.text,
     primary: palette.primary,
     gray: palette.Gray,
