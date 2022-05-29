@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 import SideMenu from '@app/components/SideMenu';
 import HomeContent from '@app/components/HomeContent';
 import HistoryComponent from '@app/components/History';
+import {IState} from '@app/types';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,6 +19,8 @@ type Props = {
   onChangeText: (args: {name: string; value: string}) => void;
   handleShortenLink: () => void;
   showHistory: boolean;
+  shortenLinkState: IState;
+  handleDeleteLink: (code: string) => void;
 };
 
 const Home = ({
@@ -26,15 +29,25 @@ const Home = ({
   onChangeText,
   handleShortenLink,
   showHistory,
+  shortenLinkState,
+  handleDeleteLink,
 }: Props) => {
   return (
     <SafeAreaView style={styles.container}>
-      {!showHistory ? <HomeContent /> : <HistoryComponent />}
+      {!showHistory ? (
+        <HomeContent />
+      ) : (
+        <HistoryComponent
+          shortenLinkState={shortenLinkState}
+          handleDeleteLink={handleDeleteLink}
+        />
+      )}
       <SideMenu
         formData={formData}
         errors={errors}
         onChangeText={onChangeText}
         handleShortenLink={handleShortenLink}
+        shortenLinkState={shortenLinkState}
       />
     </SafeAreaView>
   );
