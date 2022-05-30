@@ -16,6 +16,7 @@ $ git@github.com:Jaman-dedy/shortly_mobile_app.git
 $ cd shortly_mobile_app
 $ yarn install
 $ yarn start --reset-cache
+# yarn test
 $ yarn android
 $ yarn ios
 ```
