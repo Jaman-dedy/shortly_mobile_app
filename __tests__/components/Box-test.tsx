@@ -9,15 +9,16 @@ import MockThemes from '../../mock/MockTheme';
 
 afterEach(cleanup);
 describe('Box component', () => {
+  const link = {
+    code: 'dfdfdfd',
+    short_link: 'dfdfdfd',
+  };
+  const mockFunction = jest.fn();
   test('renders correctly', async () => {
-    const mockLink = {
-      code: 'dfdfdfd',
-      short_link: 'dfdfdfd',
-    };
     const tree = await renderer
       .create(
         <MockThemes>
-          <BoxComponent link={mockLink} />
+          <BoxComponent link={link} handleDeleteLink={mockFunction} />
         </MockThemes>,
       )
       .toJSON();
@@ -27,7 +28,7 @@ describe('Box component', () => {
   test('should copy text to the clipboard', () => {
     const {getByText} = render(
       <MockThemes>
-        <BoxComponent />
+        <BoxComponent link={link} handleDeleteLink={mockFunction} />
       </MockThemes>,
     );
     const copyText = getByText('COPY');
@@ -36,7 +37,7 @@ describe('Box component', () => {
   test('should delete an history', () => {
     const {getByLabelText} = render(
       <MockThemes>
-        <BoxComponent />
+        <BoxComponent link={link} handleDeleteLink={mockFunction} />
       </MockThemes>,
     );
     const deleteButton = getByLabelText('button');
