@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#3B3054",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <
+    style={
+      Object {
+        "alignSelf": "flex-end",
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "paddingTop": 22,
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Shorten a link here..."
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderColor": "white",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "color": "black",
+          "fontSize": 18,
+          "height": 45,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "textAlign": "center",
+          "width": 280,
+        }
+      }
+      testID="text-input"
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#2ACFCF",
+          "borderRadiu": 4,
+          "marginTop": 8,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "width": 280,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          SHORTEN IT!
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

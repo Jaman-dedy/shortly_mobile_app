@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 6,
+        "marginBottom": 16,
+        "marginLeft": 16,
+        "marginRight": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "padding": 22,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#35323E",
+            "fontFamily": "Poppins-Medium",
+            "fontSize": 18,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      undefined...
+    </Text>
+    <View
+      accessibilityLabel="button"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      < />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "stretch",
+          "borderBottomColor": "#9E9AA7",
+          "borderBottomWidth": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "padding": 16,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#2ACFCF",
+            "fontFamily": "Poppins-Medium",
+            "fontSize": 18,
+            "textAlign": "center",
+          },
+        ]
+      }
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#2ACFCF",
+          "borderRadiu": 4,
+          "marginTop": 8,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "width": 280,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Poppins-Medium",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          COPY
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

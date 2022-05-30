@@ -31,6 +31,7 @@ const Input = ({placeholder, formData, onChangeText, errors}: inputProps) => {
       }
       style={styles.input}
       placeholder={placeholder}
+      testID="text-input"
     />
   );
 };

@@ -1,23 +1,23 @@
-import {s} from 'react-native-size-matters';
+// import {s} from 'react-native-size-matters';
 
 const textFamily = {
   fontFamily: 'Poppins-Medium',
 };
 
 export const buttonVariant = {
-  paddingVertical: s(8),
-  paddingHorizontal: s(16),
-  borderRadius: s(4),
-  width: s(280),
+  paddingVertical: 8,
+  paddingHorizontal: 16,
+  borderRadiu: 4,
+  width: 280,
 };
 
 export const inputVariant = {
-  paddingVertical: s(8),
-  paddingHorizontal: s(16),
-  borderRadius: s(4),
-  width: s(280),
+  paddingVertical: 8,
+  paddingHorizontal: 16,
+  borderRadius: 4,
+  width: 280,
   borderWidth: 1,
-  height: s(45),
+  height: 45,
   fontSize: 18,
 };
 

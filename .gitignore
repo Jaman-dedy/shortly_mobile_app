@@ -59,3 +59,12 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+coverage/
+.coverage
+.coverage.*
+.testrepository/
+cover/

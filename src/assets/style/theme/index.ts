@@ -1,6 +1,6 @@
 import {createBox, createText, createTheme} from '@shopify/restyle';
 import {TouchableOpacity, TouchableOpacityProps} from 'react-native';
-import {s} from 'react-native-size-matters';
+// import {s} from 'react-native-size-matters';
 
 import {textVariants, buttonVariant, inputVariant} from './variants';
 
@@ -19,10 +19,10 @@ export const palette = {
 
 const theme = createTheme({
   spacing: {
-    sm: s(8),
-    md: s(16),
-    lg: s(22),
-    xlg: s(28),
+    sm: 8,
+    md: 16,
+    lg: 22,
+    xlg: 28,
   },
   colors: {
     offBackground: palette.backgroundColorOff,
@@ -38,16 +38,6 @@ const theme = createTheme({
   textVariants,
   buttonVariant,
   inputVariant,
-  cardVariants: {
-    primary: {
-      backgroundColor: 'primaryCardBackground',
-      shadowOpacity: 0.3,
-    },
-    secondary: {
-      backgroundColor: 'secondaryCardBackground',
-      shadowOpacity: 0.1,
-    },
-  },
 });
 
 export type Theme = typeof theme;
@@ -56,9 +46,6 @@ export const darkTheme: Theme = {
   ...theme,
   colors: {
     ...theme.colors,
-    mainBackground: palette.backgroundColor,
-    mainForeground: palette.backgroundColor,
-    text: palette.text,
   },
 };
 

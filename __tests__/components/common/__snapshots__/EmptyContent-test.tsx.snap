@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "padding": 8,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#35323E",
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 18,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Sorry, your history is empty!
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <
+      height={600}
+      width={250}
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#35323E",
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 18,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    click on the button below to shorten more links
+  </Text>
+</View>
+`;
