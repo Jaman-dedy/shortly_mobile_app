@@ -16,6 +16,7 @@ $ git@github.com:Jaman-dedy/shortly_mobile_app.git
 $ cd shortly_mobile_app
 $ yarn install
 $ yarn start --reset-cache
+$ yarn test
 $ yarn android
 $ yarn ios
 ```
@@ -23,16 +24,16 @@ $ yarn ios
 ## User flow
 
 - When the app opens the user will be presented with the home page
-<img width="357" alt="image" src="https://user-images.githubusercontent.com/46047244/171057633-eff56727-2024-4766-be26-f65572a9b0ed.png">
+  <img width="357" alt="image" src="https://user-images.githubusercontent.com/46047244/171057633-eff56727-2024-4766-be26-f65572a9b0ed.png">
 - When the user clicks on the button without providing an link an error message is shown
-<img width="352" alt="image" src="https://user-images.githubusercontent.com/46047244/171057728-74068eae-2c12-4e5c-87f1-e7a8177c23c8.png">
+  <img width="352" alt="image" src="https://user-images.githubusercontent.com/46047244/171057728-74068eae-2c12-4e5c-87f1-e7a8177c23c8.png">
 - If the user provide a wrong link an error message is displayed
-<img width="362" alt="image" src="https://user-images.githubusercontent.com/46047244/171057808-6b98391c-ef90-44bb-b3e5-4531a2b02bf2.png">
+  <img width="362" alt="image" src="https://user-images.githubusercontent.com/46047244/171057808-6b98391c-ef90-44bb-b3e5-4531a2b02bf2.png">
 - When the user provid a valid url link he will be redirected to the link history screen, he can shorten as many links he wants
-<img width="377" alt="image" src="https://user-images.githubusercontent.com/46047244/171058014-1d39bd0e-3aad-4a70-8ea3-a59b0b6bd4a9.png">
+  <img width="377" alt="image" src="https://user-images.githubusercontent.com/46047244/171058014-1d39bd0e-3aad-4a70-8ea3-a59b0b6bd4a9.png">
 - if the user delete all the link history he will be presented with an empty contenet screen
-<img width="370" alt="image" src="https://user-images.githubusercontent.com/46047244/171058081-ededd394-f8c4-4ac3-86ef-f8c10a674d5b.png">
+  <img width="370" alt="image" src="https://user-images.githubusercontent.com/46047244/171058081-ededd394-f8c4-4ac3-86ef-f8c10a674d5b.png">
 
 ## Feature improvement
-- setup correctly a ci/cd that will allow the team to get the build of the apps (android, ios) when pushing to production (merging to master branch)
 
+- setup correctly a ci/cd that will allow the team to get the build of the apps (android, ios) when pushing to production (merging to master branch)
