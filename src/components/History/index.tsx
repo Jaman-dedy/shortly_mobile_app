@@ -14,18 +14,17 @@ type Props = {
 };
 
 const History = ({shortenLinkState, handleDeleteLink}: Props) => {
-  console.log('shortenLinkState :>> ', shortenLinkState);
   return (
     <Box flex={3} backgroundColor="offBackground" marginTop="md">
       <Text variant="paragraph">Your Link History</Text>
       <ScrollView>
         <Box marginTop="md">
-          {shortenLinkState.loading ? (
+          {shortenLinkState?.loading ? (
             <>
               <PlaceHolder />
               <PlaceHolder />
             </>
-          ) : shortenLinkState?.result.length ? (
+          ) : shortenLinkState?.result?.length ? (
             shortenLinkState?.result.map(
               (link: Record<string, string>, index: number) => (
                 <BoxComponent

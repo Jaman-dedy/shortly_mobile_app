@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F0F1F6",
+        "flex": 3,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#35323E",
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 34,
+          "fontWeight": "bold",
+          "paddingTop": 22,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Shortly
+  </Text>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    < />
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#35323E",
+              "fontFamily": "Poppins-Medium",
+              "fontSize": 22,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Let's get started
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#35323E",
+              "fontFamily": "Poppins-Medium",
+              "fontSize": 18,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Paste your first link into
+the field to shorten it
+      </Text>
+    </View>
+  </View>
+</View>
+`;

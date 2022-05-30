@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Clipboard from '@react-native-community/clipboard';
+import {Clipboard} from 'react-native';
 
 import {Box, Text} from '@app/assets/style/theme';
 import Button from '@app/components/common/Button';
@@ -34,7 +34,7 @@ const BoxComponent = ({link, handleDeleteLink}: Props) => {
         justifyContent="space-between"
         alignSelf="stretch">
         <Text variant="paragraph">{truncate(link?.original_link, 27)}</Text>
-        <IconButton onPress={() => handleDeleteLink(link?.code)}>
+        <IconButton label="button" onPress={() => handleDeleteLink(link?.code)}>
           <DeleteImg />
         </IconButton>
       </Box>

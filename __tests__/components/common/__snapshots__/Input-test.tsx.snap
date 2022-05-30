@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Input component renders correctly 1`] = `
+<TextInput
+  onChangeText={[Function]}
+  placeholder="shorten a link here"
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderColor": "white",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "color": "black",
+      "fontSize": 18,
+      "height": 45,
+      "paddingHorizontal": 16,
+      "paddingVertical": 8,
+      "textAlign": "center",
+      "width": 280,
+    }
+  }
+  testID="text-input"
+  value="www.example.com"
+/>
+`;
